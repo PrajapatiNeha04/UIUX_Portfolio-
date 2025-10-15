@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Cover - Neha</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black url("Bg.png");
+      background-size: cover;   
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+    }
+
+    .container {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+    }
+
+    /* Background gradient blob */
+    .blob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80vw;
+      height: 60vh;
+      background: linear-gradient(-245deg, #ff1e1e, #2c0000);
+      border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+      z-index: 1;
+      opacity: 0.8;
+      animation: blobAnim 3s ease-in-out infinite alternate;
+      box-shadow: 0 0 100px rgba(255, 255, 255, 0.3);
+    }
+
+    @keyframes blobAnim {
+      0% { border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%; }
+      50% { border-radius: 70% 30% 40% 60% / 50% 60% 40% 50%; }
+      100% { border-radius: 60% 40% 30% 70% / 60% 50% 50% 40%; }
+    }
+
+    /* Portfolio big text */
+    .portfolio-text {
+      font-size: 9vw;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -5px;
+      color: rgba(255, 255, 255, 0.8);
+      mix-blend-mode: overlay;
+      position: relative;
+      z-index: 2;
+      line-height: 1;
+
+    }
+
+    /* Slight rotation for scattered letters */
+    .portfolio-text span {
+      display: inline-block;
+      transform: rotate(var(--r));
+    }
+
+    /* Tagline */
+    .tagline {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #f5bfbf;
+      z-index: 3;
+      position: relative;
+    }
+
+    /* Year */
+    .year {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #ffcccc;
+      margin-top: 10px;
+      z-index: 3;
+      position: relative;
+    }
+
+    /* Button */
+    .enter-btn {
+      margin-top: 30px;
+      padding: 12px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #b30000;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 3;
+      position: relative;
+    }
+
+    .enter-btn:hover {
+      background: #ffe6e6;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Shape -->
+  <div class="blob"></div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="portfolio-text">
+      <span style="--r: -10deg">P</span>
+      <span style="--r: 5deg">O</span>
+      <span style="--r: -8deg">R</span>
+      <span style="--r: 6deg">T</span>
+      <span style="--r: -12deg">F</span>
+      <span style="--r: 8deg">O</span>
+      <span style="--r: -7deg">L</span>
+      <span style="--r: 5deg">I</span>
+      <span style="--r: -10deg">O</span>
+    </div>
+    <div class="tagline">Creative • Modern • Unique</div>
+    <div class="year">2025 😉 </div>
+    <button class="enter-btn" onclick="window.location.href='home.html'">Dive Into the Spectrum of Creativity</button>
+  </div>
+</body>
+</html>
