@@ -8,4 +8,7 @@ I'm a UI/UX designer passionate about creating user-centered designs that drive 
 - Projects: Explore my case studies and design solutions
 - Contact: Let's collaborate! I'd love to hear from you
 
+- Have a look here: https://prajapatineha04.github.io/UIUX_Portfolio-/
+  
+
 Let's connect and create something amazing together! 🌈
